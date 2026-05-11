@@ -4,9 +4,6 @@
     "moduleResolution": "bundler",
     "target": "es2020",
     "types": ["node"],
-
-    "outDir": "./dist",
-
     "strict": true,
     "esModuleInterop": true,
     "sourceMap": true,

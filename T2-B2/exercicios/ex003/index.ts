@@ -10,6 +10,8 @@ exibirDadosGerente()
 Esse método deve acessar os atributos herdados diretamente e mostrá-los no terminal.
 */
 
+import { log } from "console";
+
 class Funcionario{
     protected nome: string;
     protected salario: number;
@@ -29,3 +31,7 @@ class Gerente extends Funcionario{
         super(nome, salario);
     }
 }
+
+let velhoChato = new Gerente("Homar", 5000);
+
+console.log(velhoChato);
