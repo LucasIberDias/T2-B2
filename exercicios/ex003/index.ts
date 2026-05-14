@@ -10,8 +10,6 @@ exibirDadosGerente()
 Esse método deve acessar os atributos herdados diretamente e mostrá-los no terminal.
 */
 
-import { log } from "console";
-
 class Funcionario{
     protected nome: string;
     protected salario: number;
