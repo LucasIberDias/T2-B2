@@ -48,7 +48,7 @@ class Pessoa {
     }
 
     apresentar(): void {
-        console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`);
+        console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos. \n`);
     }
 }
 
@@ -56,11 +56,7 @@ class Aluno extends Pessoa {
     public matricula: string;
     public curso: string;
 
-    constructor(
-        nome: string,
-        idade: number,
-        matricula: string, curso: string
-    ) {
+    constructor(nome: string, idade: number, matricula: string, curso: string) {
         super(nome, idade);
 
         this.matricula = matricula;
@@ -68,7 +64,7 @@ class Aluno extends Pessoa {
     }
 
     estudar(): void {
-        console.log(`${this.nome} está estudando ${this.curso}.`);
+        console.log(`${this.nome} está estudando ${this.curso}. \n`);
     }
 }
 
@@ -82,7 +78,7 @@ class Professor extends Pessoa {
     }
 
     ensinar(): void {
-        console.log(`${this.nome} está ensinando ${this.disciplina}.`);
+        console.log(`${this.nome} está ensinando ${this.disciplina}. \n`);
     }
 }
 
@@ -96,7 +92,7 @@ class Coordenador extends Pessoa {
     }
 
     coordenar(): void {
-        console.log(`${this.nome} está coordenando o setor ${this.setor}.`);
+        console.log(`${this.nome} está coordenando o setor ${this.setor}. \n`);
     }
 }
 
